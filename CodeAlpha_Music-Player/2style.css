@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color:#fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    
+}
+.music{
+    width: 400px;
+    background-color: antiquewhite;
+    padding: 25px;
+    text-align: center;
+}
+img{
+    height: 150px;
+    width: 150px;
+    border-radius:50%;
+    border: 8px solid #fff;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+nav .circle{
+    background-color:#fff;
+    color: #f53192;
+    border-radius: 50%;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    
+}
+#progress{
+    -webkit-appearance: none;
+    width:200px;
+    height: 5px;
+    background-color:#f53192;
+    margin: 20px;
+    border-radius:4px;
+}
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color:#f53192;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controls div{
+    width:40px ;
+    height: 40px;
+    margin:10px;
+    display: inline flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #f53192;
+    cursor: pointer;
+}
+.controls div:nth-child(2)
+{
+    transform: scale(1.5);
+    background-color: #fff;
+    color: #f53192;
+    
+}
+.volume_{
+    transform: rotate(270deg);
+    position: absolute;
+    top: 50%;
+    height: 10px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#volume::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color:#f53192;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+#volume{
+    -webkit-appearance: none;
+    width:150px;
+    height: 5px;
+    background-color:#f53192;
+    border-radius:4px;
+}
+.volume_ p{
+    transform: rotate(90deg);
+    color: #f53192;
+    font-weight: bold;
+}
